@@ -5,7 +5,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: report triggering event
+      - name: primeiro step do fluxo
         run: echo "the job was automatically triggered by a ${{ github.event_name }} event."
-      - name: data da execução
+      - name: Segundo step do fluxo
+        run: echo "A ação está sendo gerado no Sistema Operacional ${{ runner.os }}."
+      - name: Terceiro step do fluxo
+        run: echo "O repositorio que está sendo utilizado é o ${{github.repository}}. "
+      - name: Quarto step do fluxo
         run: echo "A execução foi feita em 14/09/2026"
